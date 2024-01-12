@@ -7,11 +7,22 @@
 */
 int main(void)
 {
-char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++)
+char lower = 'a';
+char upper = 'A';
+
+while (lower <= 'z')
 {
-	putchar(ch);
+	putchar(lower);
+	lower++;
 }
+
+while (upper <= 'Z')
+{
+	putchar(upper);
+	upper++;
+}
+
 putchar('\n');
+
 return (0);
 }
