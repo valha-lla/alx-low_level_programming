@@ -5,14 +5,15 @@
  *
  * Description: combine two digits in the every
  * possible way, numbers < 99
+ * Return: 0
  */
 
-int main(void) 
+int main(void)
 {
 int i;
 int j;
 
-for (i = 0; i <= 99; i++) 
+for (i = 0; i <= 99; i++)
 {
 	for (j = i; j <= 99; j++)
 	{
@@ -21,7 +22,6 @@ for (i = 0; i <= 99; i++)
 		putchar(' ');
 		putchar('0' + j / 10);
 		putchar('0' + j % 10);
-		
 		if (i != 99 || j != 99)
 		{
 			putchar(',');
@@ -29,8 +29,10 @@ for (i = 0; i <= 99; i++)
 		}
 	}
 }
+
 putchar('\n');
 
-return 0;
+return (0);
 }
+
 
