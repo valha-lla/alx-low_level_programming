@@ -1,24 +1,36 @@
 #include <stdio.h>
+
 /**
- * main - program that prints numbers from 0 to 99.
- * Return: 0
+ * main- function to print 2 digits combination
+ *
+ * Description: combine two digits in the every
+ * possible way, numbers < 99
  */
 
-int main(void)
+int main(void) 
 {
-	int c = 0;
+int i;
+int j;
 
-	while (c <= 99)
+for (i = 0; i <= 99; i++) 
+{
+	for (j = i; j <= 99; j++)
 	{
-		putchar(c / 10 + '0');
-		putchar(c % 10 + '0');
-		if (c != 99)
+		putchar('0' + i / 10);
+		putchar('0' + i % 10);
+		putchar(' ');
+		putchar('0' + j / 10);
+		putchar('0' + j % 10);
+		
+		if (i != 99 || j != 99)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		c++;
 	}
-putchar('\n');
-return (0);
 }
+putchar('\n');
+
+return 0;
+}
+
