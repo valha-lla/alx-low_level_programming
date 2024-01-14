@@ -20,12 +20,17 @@ for (i = 0; i <= 9; i++)
 		{
 			_putchar(result + '0');
 		}
+		if (result < 10)
+		{
+			_putchar(',');
+			_putchar(' ');
+			_putchar(result + '0');
 		else
 		{
 			_putchar(',');
 			_putchar(' ');
-			result = result % 10;
-			_putchar(result + '0');
+			_result = result % 10;
+			_putchar(_result + '0');
 		}
 	}
 	_putchar('\n');
