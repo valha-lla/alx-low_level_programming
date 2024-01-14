@@ -30,8 +30,7 @@ for (i = 0; i <= 9; i++)
 		{
 			_putchar(',');
 			_putchar(' ');
-			_result = result % 10;
-			_putchar(_result + '0');
+			_putchar(result % 10 + '0');
 		}
 	}
 	_putchar('\n');
