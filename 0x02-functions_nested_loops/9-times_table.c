@@ -22,7 +22,7 @@ for (i = 0; i <= 9; i++)
 		}
 		else
 		{
-			result < 10 ? result : result % 10;
+			result = result < 10 ? result : result % 10;
 			_putchar(result + '0');
 		}
 	}
