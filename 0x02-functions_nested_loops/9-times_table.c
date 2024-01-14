@@ -26,6 +26,6 @@ for (i = 0; i <= 9; i++)
 			_putchar(result + '0');
 		}
 	}
-	printf("\n");
+	_putchar("\n");
 }
 }
