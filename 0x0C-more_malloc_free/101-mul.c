@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
@@ -79,8 +79,7 @@ int _checknum(char *argv[], int n)
  * @argc: number of arguments.
  * @argv: arguments vector.
  *
- * Return: 0
- * if fails print Error
+ * Return: 0 - success.
  */
 int main(int argc, char *argv[])
 {
