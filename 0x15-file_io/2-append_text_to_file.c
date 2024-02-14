@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * apend_text_to_file - append text to end of file
- * @filename: pathname of the files.
- * @text_content: content to append.
+ * append_text_to_file - append to a file
+ * Description: function to append text to end of file
+ * @filename: pathname of the file
+ * @text_content: text to appen
  *
- *
- * Return: 1 on success, -1 on failure.
+ * Return: 1 on succes or -1 on failure
  */
 
 int append_text_to_file(const char *filename, char *text_content)
